@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Master.Admin" %>
+<%@ Register Src="~/Header.ascx" TagName="myhead" TagPrefix="wuc" %>
+<%@ Register Src="~/footer.ascx" TagName="myfoot" TagPrefix="wuc" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">    
+        <div>  
+            <table>
+                <tr>
+                    <td>
+                        <wuc:myhead id="h1" runat="server"></wuc:myhead>
+                    </td>
+                </tr>
+                <tr>
+                    <td">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                         </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height:300px"><wuc:myfoot id="f1" runat="server"></wuc:myfoot>
+
+                    </td>
+                </tr>
+            
+                </table>
+        </div>
+    </form>
+</body>
+</html>
